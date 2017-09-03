@@ -1,0 +1,31 @@
+<div class="game_table" data-wanted-card="{wanted_card}">
+	 
+	<div class="border td">
+		<span class="playername opponent {opponent_label_class}">Heniu &nbsp; </span>
+		<div class="opponent_books_num cards_num"><i class="fa fa-book"></i> <div style="display: inline; position: relative">{opponent_books_num}</div></div>
+		<div class="opponent_cards">{opponent_cards}</div>
+		<div class="opponent_msg_container">{opponent_msg_container}</div>
+	</div>
+	<div class="td" style="height: 165px">
+		<div class="cards_given_by_opponent" style="display: transparent">{cards_given_by_opponent}</div>
+		<div class="deck">
+			{deck_cards}
+		</div>
+	</div>
+	<div class="border td">
+		<div class="player_msg_container">{player_msg_container}</div>
+		<span class="playername player {player_label_class}">Gracz &nbsp; </span>
+		<div class="human_books_num cards_num"><i class="fa fa-book"></i> <div style="display: inline; position: relative">{human_books_num}</div></div>
+		<div style="clear: both">
+			<div class="human_panel">{human_panel}</div>
+		</div>
+		<button class="btn btn-primary pick_card_btn"{pick_card_disable} title="Pobierz kartę."><img src="img/card-icon.png" width="40px"></button>
+		<button class="btn btn-primary go_fish_btn"{go_fish_disable} title="Idź na ryby!"><img src="img/fish.png" width="40px" ></button>	
+	</div>
+</div>
+
+<div class="human_cards_container">
+	{human_cards}
+</div>
+
+<input type='submit' value='Gotowe' class='btn btn-primary select_done_btn' />

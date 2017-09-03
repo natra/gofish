@@ -1,0 +1,290 @@
+body {
+	font-family: Verdana;
+	text-align: center;
+}
+
+span {
+	font-size: 14px;
+}
+
+.game_table {
+	margin: 0 auto;
+}
+
+.game_table .td{
+	width: 500px;
+	height: 130px;
+	vertical-align: top;
+	padding: 5px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.game_table form {
+	display: inline;
+}
+
+
+.border {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0,0,0,.2); 
+}
+
+.border .opponent_cards, .border .human_panel {
+	clear: both;
+	margin-top: 10px;
+}
+
+.playername {
+	float: left;
+	margin-bottom: 20px;
+	margin-left: 4px;
+}
+
+.cards_num{
+	float: right;
+	font-size: 25px;
+	margin-right: 6px;
+}
+
+.cards_num div {
+	font-size: 24px;
+}
+
+.game_status button {
+	
+}
+
+.pick-card-box {
+	text-align: center;
+}
+
+.human_cards_table {
+	
+	position: relative;
+	/*left: 15px;*/
+	margin-top: 20px;
+	/*width: 100%;*/
+}
+
+.human_card div {
+	width: 25px; 
+	text-align: center;
+	
+}
+
+.human_cards_table .rotated_symbol, .rotated_symbol {
+	transform: rotate(180deg);
+    right: 5px;
+    bottom: 4px;
+    position: absolute;
+}
+
+
+.human_card, .given_card_by_mashine {
+	height: 100px;
+	width: 71px;
+	background: #fff;
+	display: inline-block;
+	border: 1px solid #999;
+	border-radius: 10px;
+	color: #000;
+	text-align: left;
+	padding: 5px;
+	font-size: 20px;
+	margin-left: -36px;
+	left: 18px;
+	position: relative;
+	box-shadow: 0 5px 10px rgba(0,0,0,.2); 
+}
+
+.given_card_by_mashine{
+	width: 50px;
+	height: 72px;
+	font-size: 15px;
+	left: 0;
+	margin-left: 4px;
+}
+
+.given_card_by_mashine .given_card_by_mashine_suit{
+	font-size: 15px;
+	display: block;
+	margin-top: -10px;
+}
+
+.given_card_by_mashine div {
+	width: 15px;
+	text-align: center;
+}
+
+.human_card .human_card_suit {
+	font-size: 23px;
+	display: block;
+	margin-top: -13px;
+
+}
+
+.human_card .human_card_suit_bottom {
+	font-size: 23px;
+	display: block;
+	margin-top: -13px;
+	text-align: right;
+}
+
+.human_card:hover, .given_card_by_mashine:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.human_card.active:hover, .given_card_by_mashine:hover {
+	cursor: pointer;
+}
+
+.red_card, .red_card:hover {
+	color: red;
+}
+
+.end_game_button {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+}
+
+.games_rules_button {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+.select_done_btn {
+	display: block;
+	margin: 15px auto 0;
+	visibility: hidden;
+}
+
+.human_cards_heading {
+	clear: both;
+	margin-bottom: 20px;
+}
+
+.game_status {
+	text-align: center;
+	font-size: 16px;
+}
+
+.human_books_num, .opponent_books_num {
+	margin-bottom: 10px;
+}
+
+a.play_again {
+	margin-top: 30px;
+}
+
+.end_game {
+	margin-top: 50px;
+}
+
+.small_card {
+	height: 50px;
+    width: 35px;
+    background: #fff;
+    display: inline-block;
+    border: 1px solid #999;
+    text-align: left;
+    position: relative;
+    background: url("../img/card_back_side.jpg");
+    background-size: 100%;
+}
+
+.opponent_card {
+    margin-left: -16px;
+    left: 8px;
+}
+
+.deck_card {
+	margin-left: -35px;
+    left: 17px;
+}
+
+.deck_card.visible {
+    margin-left: -34px;
+    left: 17px;
+}
+
+.picked_num {
+	margin-left: 3px;
+}
+
+.cards_given_by_opponent {
+	margin-top: 10px;
+}
+
+.msg_container {
+	top: 15px; 
+	display: block; 
+	height: 100px; 
+	width: 100px; 
+	position: absolute; 
+	border: 1px solid rgba(0,0,0,.2); 
+	border-radius: 6px; 
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+	line-height: 100px;	
+	font-size: 21px;
+}
+
+.player_msg_container {
+	right: 100%; 
+	margin-right: 20px;
+}
+
+.opponent_msg {
+	left: 100%; 
+	margin-left: 20px;
+	font-size: 30px;
+	color: #337ab7;
+}
+
+.opponent_msg img {
+	width: 60px;
+}
+
+.go_fish_btn, .pick_card_btn {
+	position: absolute;
+	margin-left: 10px;
+	left: 100%;
+	cursor: default;
+}
+
+.go_fish_btn {
+	bottom: 0;
+	margin-bottom: 5px;
+}
+
+.pick_card_btn {
+	top: 0;
+	margin-top: 5px;
+}
+
+.go_fish_btn:hover, .pick_card_btn:hover {
+	cursor: pointer;
+}
+
+.go_fish_btn[disabled]:hover, .pick_card_btn[disabled]:hover {
+	cursor: default;
+}
+
+.active_player {
+	border-bottom: 3px solid #337ab7;
+}
+
+.deck {
+	position: absolute;
+	left: 80%;
+	margin-top: -32px;
+	top: 50%;
+}
+
+.games_rules p {
+	text-align: justify;
+}
